@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "BumpMate Depop Extension",
+  "version": "1.0.0",
+  "action": {
+    "default_title": "BumpMate Depop Extension",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab", "tabs", "storage", "cookies"],
+  "icons": { "128": "icon.png" },
+  "background": {
+    "service_worker": "content-script/src/Background/background.ts"
+  },
+  "host_permissions": ["https://www.depop.com/*"],
+  "web_accessible_resources": [
+    {
+      "resources": ["iconTransparent.png", "icon.png"],
+      "matches": ["https://www.depop.com/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.depop.com/*"],
+      "js": [
+        "content-script/src/main.tsx",
+        "content-script/src/contentScript.ts"
+      ],
+      "media": []
+    }
+  ]
+}
