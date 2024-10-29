@@ -1,6 +1,6 @@
 # Bumpmate
 
-![Bumpmate Screenshot](https://ibb.co/6ZbmPhg)
+![Bumpmate Screenshot](https://i.ibb.co/ky0x8nQ/1724968370246.jpg)
 
 Bumpmate is a Chrome extension designed for Depop sellers, streamlining the process of managing and promoting listings. This project showcases my skills in browser extension development, user interface design, and e-commerce automation.
 
